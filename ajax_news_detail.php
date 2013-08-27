@@ -1,0 +1,3 @@
+<strong>Chef Chris Cosentino pushes boundaries of Italian cuisine</strong>
+<p>Chef Chris Cosentino pushes boundaries of Italian cuisine 10 Dallas dining rooms quiet enough for conversation See Mi Piaci’s attractive, fresh new look and offerings 
+Restaurant review: At Mi Piaci, Italian cooking, curiously interpreted Chef Chris Cosentino pushes boundaries of Italian cuisine 10 Dallas dining rooms quiet enough for conversation See Mi Piaci’s attractive, fresh new look and offerings Restaurant review: At Mi Piaci, Italian cooking, curiously interpreted Chef Chris Cosentino pushes oundaries of Italian cuisine10 Dallas dining rooms quiet enough for conversation</p>
