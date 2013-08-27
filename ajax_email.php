@@ -19,25 +19,28 @@ function sendEmail($userEmail,$userAddress){
 	
 	$mail = new PHPMailer();
 	$mail->IsSMTP();
+	$mail->SMTPDebug  = 1;         
 	$mail->SetLanguage('zh_cn','phpmailer/language/');
+	
     $mail->CharSet 		 = "utf-8"; 
     $mail->Encoding		 = "base64";
-	$mail->SMTPSecure 	 = "ssl";
+    $mail->SMTPSecure 	 = "ssl";
 	$mail->SMTPAuth      = true;                  
 	$mail->SMTPKeepAlive = true;                  
-	$mail->Host          = "smtpout.asia.secureserver.net";
+	$mail->Host          = "hwsmtp.exmail.qq.com";
 			  
 	$mail->Port          = 465;                    
 	$mail->Username      = "contact@savor.com.hk";    
-	$mail->Password      = "P@ssword999";            
+	$mail->Password      = "P@ss2234";            
 	
-	$mail->SetFrom('service@savor.com.hk', 'SavorEmail');
+	$mail->SetFrom('contact@savor.com.hk', 'SavorEmail');
 	$mail->Subject       = "SavorService";
 	$body = preg_replace("/[\/]/",'',$userEmail);
 	$mail->MsgHTML($body);
 	$address = $userAddress;
 	$mail->AddAddress($address, "");
-	
+	$mail->AddCC("tkt1.gd@gmai.com", "");
+			
 	if($mail->Send()) {
 	  return "Ok";
 	} else {
