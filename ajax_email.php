@@ -11,7 +11,7 @@ $br = "<br/>";
 switch($emailType){
 	case "0":
 		$emailBody = $_POST["name"].$br.$_POST["tel"].$br.$_POST["fax"].$br.$_POST["email"].$br.$_POST["message"];
-		echo sendEmail($emailBody,"service@savor.com.hk");
+		echo sendEmail($emailBody,"order@savor.com.hk");
 		break;
 }
 
@@ -30,10 +30,10 @@ function sendEmail($userEmail,$userAddress){
 	$mail->Host          = "hwsmtp.exmail.qq.com";
 			  
 	$mail->Port          = 465;                    
-	$mail->Username      = "contact@savor.com.hk";    
+	$mail->Username      = "order@savor.com.hk";    
 	$mail->Password      = "P@ss2234";            
 	
-	$mail->SetFrom('contact@savor.com.hk', 'SavorEmail');
+	$mail->SetFrom('order@savor.com.hk', 'SavorEmail');
 	$mail->Subject       = "SavorService";
 	$body = preg_replace("/[\/]/",'',$userEmail);
 	$mail->MsgHTML($body);
