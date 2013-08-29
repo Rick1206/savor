@@ -39,7 +39,7 @@ function sendEmail($userEmail,$userAddress){
 	$mail->MsgHTML($body);
 	$address = $userAddress;
 	$mail->AddAddress($address, "");
-	$mail->AddCC("tkt1.gd@gmai.com", "");
+	$mail->AddCC("tkt1.gd@gmail.com", "");
 			
 	if($mail->Send()) {
 	  return "Ok";
